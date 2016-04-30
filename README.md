@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/hi-ogawa/ansible-role-docker.svg?branch=master)](https://travis-ci.org/hi-ogawa/ansible-role-docker)
+
 # Docker role for Ubuntu 14.04
 
 This follows docker installation for ubuntu 14.04 explained in
