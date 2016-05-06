@@ -120,6 +120,13 @@ changed: [192.168.33.10]
 TASK [ansible-role-docker : install docker] ************************************
 changed: [192.168.33.10]
 
+TASK [ansible-role-docker : download docker-compose] ***************************
+changed: [192.168.33.10]
+ [WARNING]: Consider using get_url module rather than running curl
+
+TASK [ansible-role-docker : change file attributes of docker-compose] **********
+changed: [192.168.33.10]
+
 TASK [ansible-role-docker : add users to docker group] *************************
 changed: [192.168.33.10] => (item=root)
 

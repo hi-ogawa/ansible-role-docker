@@ -31,6 +31,15 @@
   notify:
     - restart docker
 
+- name: download docker-compose
+  shell: "curl -L https://github.com/docker/compose/releases/download/1.7.0/docker-compose-`uname -s`-`uname -m` > /usr/local/bin/docker-compose"
+  args:
+    executable: /bin/bash
+    creates: /usr/local/bin/docker-compose
+
+- name: change file attributes of docker-compose
+  file: path=/usr/local/bin/docker-compose mode="a+x"
+
 - name: add users to docker group
   user:
     append: yes
